@@ -1,0 +1,1 @@
+angular.module('pictureDetail', ['ngRoute', 'core.picture']);

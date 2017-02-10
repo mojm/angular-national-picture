@@ -1,0 +1,45 @@
+
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+      <div class="jumbotron">
+          <h1>
+            国家地理杂志
+          </h1>
+      </div>
+			<nav class="navbar navbar-default" id = "navbar">
+			  <div class="container-fluid">
+			    <div class="collapse navbar-collapse" >
+			      <div class="nav navbar-nav"  id="sel">
+              <select name="" id="" ng-model="$ctrl.orderProps">
+                <option value="title" >标题</option>
+                <option value="time" >时间</option>
+                <option value="address">地点</option>
+              </select>
+			      </div>
+			      <form class="navbar-form navbar-left">
+			        <div class="form-group">
+			          <input type="text" class="form-control" placeholder="搜索" ng-model="$ctrl.query">
+			        </div>
+			      </form>
+			    </div>
+			  </div>
+			</nav>
+			<div class="pictures">
+				<div class="media picture-list-item" ng-repeat="picture in $ctrl.pictures | filter:$ctrl.query | orderBy: $ctrl.orderProps">
+					 <a href="#!/pictures/{{picture.id}}" class="pull-left"><img ng-src="{{picture.imgUrl}}" class="media-object" alt='' /></a>
+					<div class="media-body">
+						<h4 class="media-heading">
+							{{picture.title}}
+						</h4> {{picture.info}}
+					</div>
+				</div>
+			</div>>
+		</div>
+	</div>
+</div>
+
+
+
+
+
