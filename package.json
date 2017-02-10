@@ -1,0 +1,26 @@
+{
+  "name": "angular-national-picture",
+  "version": "1.0.0",
+  "description": "an angular practise for national picture",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bower install",
+    "start": "http-server -a localhost -p 8000 -c-1 ./app"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mojm/angular-national-picture.git"
+  },
+  "author": "mojm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mojm/angular-national-picture/issues"
+  },
+  "homepage": "https://github.com/mojm/angular-national-picture#readme",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "http-server": "^0.9.0"
+  }
+}

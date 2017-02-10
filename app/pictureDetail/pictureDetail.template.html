@@ -1,0 +1,25 @@
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column" id="feature">
+			<div class="jumbotron">
+			    <h1>
+			      {{$ctrl.picture.id}}
+			    </h1>
+			</div>
+			<div class="col-md-4" id="main">
+				<img ng-src="{{$ctrl.mainImgUrl}}" alt="">
+			</div>
+			<div class="col-md-8" id="list">
+				<div class="col-xs-6 col-md-3 clearfix" ng-repeat="detail in $ctrl.picture.details">
+				    <img ng-src="{{detail.img}}" alt="..." ng-click="$ctrl.setImgUrl(detail.index)">
+				</div>
+			
+				<div id="des">
+					<h4>{{$ctrl.mainTitle}}</h4>
+					{{$ctrl.mainDes}}
+				</div>			
+			
+			</div>
+		</div>
+	</div>
+</div>

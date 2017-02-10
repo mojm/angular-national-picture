@@ -1,0 +1,18 @@
+{
+  "name": "angular-national-picture",
+  "homepage": "https://github.com/mojm/angular-national-picture",
+  "authors": [
+    "mojm <mjm-mars@163.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}
