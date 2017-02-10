@@ -6,8 +6,8 @@
 			      {{$ctrl.picture.id}}
 			    </h1>
 			</div>
-			<div class="col-md-4" id="main">
-				<img ng-src="{{$ctrl.mainImgUrl}}" alt="">
+			<div class="col-md-4 clearfix" id="main">
+				<img class="picture-item" ng-repeat="detail in $ctrl.picture.details" ng-src="{{detail.img}}" ng-class="{selected: detail.img==$ctrl.mainImgUrl}" alt="">
 			</div>
 			<div class="col-md-8" id="list">
 				<div class="col-xs-6 col-md-3 clearfix" ng-repeat="detail in $ctrl.picture.details">
