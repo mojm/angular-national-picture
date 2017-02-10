@@ -27,4 +27,17 @@ div#des {
 	float:left;
 }
 /*animation ofr pictures changes*/
+.picture-item {
+	display:none;
+	float:left;
+}
+.picture-item:first-child {
+	display:block;
+}
 
+#main {
+	height:350px;
+	float:left;
+	overflow:hidden;
+	position:relative;
+}
